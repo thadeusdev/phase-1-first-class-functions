@@ -1,10 +1,13 @@
-
 function receivesAFunction(callback){
-    callback();
+    callback()
 }
-receivesAFunction();
 
 function returnsANamedFunction(){
-    return returnsANamedFunction;
+    return receivesAFunction
 }
 
+function returnsAnAnonymousFunction(){
+    return function(){
+        console.log('i am anonymous function')
+    }
+}
